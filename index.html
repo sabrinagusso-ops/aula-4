@@ -1,1 +1,193 @@
 
+Aqui estão os 3 arquivos separados, configurados especialmente para o seu tema de Horta, utilizando a sua paleta de cores (Azul e Roxo) e ajustados exatamente para 6 posts!
+
+📄 1. index.html
+HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Horta em Casa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Horta em Casa & Vida Verde</h1>
+        <p>Compartilhando dicas de cultivo, sustentabilidade e carinho com a terra</p>
+    </header>
+
+    <main>
+        <article>
+            <img src="post1.jpg" alt="Ilustração de uma muda brotando no solo com folhas verdes.">
+            <div>
+                <h2>Como começar sua primeira horta</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+                <p>Começar uma horta em casa é simples! Escolha um local com boa iluminação solar direta, vasos com drenagem e uma terra rica em nutrientes.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="post2.jpg" alt="Ilustração de vasos com temperos como manjericão, salsa e cebolinha.">
+            <div>
+                <h2>Temperos fáceis para ter no vaso</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+                <p>Manjericão, salsa e cebolinha são ideais para iniciantes. Eles crescem bem em pequenos espaços e deixam suas refeições sempre frescas!</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="post3.jpg" alt="Ilustração de regador despejando água suavemente em um vaso com planta.">
+            <div>
+                <h2>O segredo da rega perfeita</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+                <p>Nem demais, nem de menos! O segredo é colocar o dedo no solo: se sair limpo e seco, é hora de regar; se sair úmido, aguarde mais um pouco.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="post4.jpg" alt="Ilustração de uma casca de banana e cascas de ovo virando adubo natural.">
+            <div>
+                <h2>Adubação natural com cascas</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+                <p>Cascas de banana (ricas em potássio) e cascas de ovo trituradas (ricas em cálcio) são excelentes adubos caseiros e sustentáveis para suas plantas.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="post5.jpg" alt="Ilustração de uma joaninha em uma folha verde combatendo pragas.">
+            <div>
+                <h2>Como afastar pragas de forma orgânica</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+                <p>Evite inseticidas químicos! Soluções naturais com sabão neutro diluído em água ou borrifar chá de hortelã ajudam a proteger suas folhagens.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="post6.jpg" alt="Ilustração de mãos colhendo tomates cereja vermelhos e frescos.">
+            <div>
+                <h2>A alegria da primeira colheita</h2>
+                <p class="artigo-autor">Por: Sabrina Viana Gusso</p>
+
+                <p>Acompanhar a semente germinar e se transformar em um alimento saudável no seu prato é uma das experiências mais gratificantes que existem.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+🎨 2. style.css
+CSS
+
+
+body {
+    max-width: 100vw;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a4b8c; /* Azul Principal */
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 16px;
+    border-bottom: 4px solid #6b21a8; /* Roxo Secundário */
+}
+
+main {
+    background-color: #ffffff;
+    color: #1a4b8c; /* Azul */
+    margin: 0 auto;
+    padding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    border: 2px solid #6b21a8; /* Roxo Secundário */
+    border-radius: 8px;
+
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* Imagens ajustadas exatamente em 80x80px */
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #6b21a8; /* Roxo */
+}
+
+button {
+    background-color: #f3f0ff;
+    border: 1px solid #6b21a8;
+    color: #1a4b8c;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #e9d5ff;
+}
+⚡ 3. script.js
+JavaScript
+
+
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(function (botao) {
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+            texto.textContent++;
+            curtiu = true;
+        } else {
+            texto.textContent--;
+            curtiu = false;
+        }
+    }
+});
+📌 Lembrete ativado: Quando estiver tudo pronto para criarmos e salv
