@@ -1,71 +1,70 @@
 
 body {
     max-width: 100vw;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Uma fonte padrão simples */
 }
 
 header {
-    background-color: #1a4b8c; /* Azul Principal */
-    color: #ffffff;
+    /* Cor principal: Verde */
+    background-color: #2E7D32; 
+    color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
-    padding: 24px 16px;
-    border-bottom: 4px solid #6b21a8; /* Roxo Secundário */
+    padding: 16px;
 }
 
 main {
-    background-color: #ffffff;
-    color: #1a4b8c; /* Azul */
+    background-color: #FFFFFF;
+    /* Cor secundária: Marrom */
+    color: #5D4037; 
     margin: 0 auto;
     padding: 16px;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Centraliza os posts */
 }
 
 article {
     display: flex;
-    border: 2px solid #6b21a8; /* Roxo Secundário */
-    border-radius: 8px;
-
+    /* Borda marrom */
+    border: 2px solid #5D4037; 
     margin: 16px;
     gap: 16px;
     padding: 16px;
-
     flex: 1 1 25%;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    border-radius: 8px; /* Cantos arredondados opcionais */
+    min-width: 250px; /* Garante que os posts não fiquem muito estreitos */
 }
 
-/* Imagens ajustadas exatamente em 80x80px */
+/* Imagens simples quadradas (80px por 80px) */
 img {
     width: 80px;
     height: 80px;
-    object-fit: cover;
-    border-radius: 6px;
+    object-fit: cover; /* Ajusta a imagem ao quadrado */
+    border-radius: 5px;
 }
 
 .artigo-autor {
     font-weight: bold;
-    color: #6b21a8; /* Roxo */
 }
 
+/* Estilo para os botões usando a cor principal verde */
 button {
-    background-color: #f3f0ff;
-    border: 1px solid #6b21a8;
-    color: #1a4b8c;
-    border-radius: 4px;
-    padding: 6px 12px;
+    background-color: #4CAF50; /* Outro tom de verde para o botão */
+    color: white;
+    border: none;
+    padding: 8px 16px;
     cursor: pointer;
-    margin: 4px;
+    border-radius: 4px;
     font-size: 14px;
+    margin: 4px;
 }
 
 button:hover {
-    background-color: #e9d5ff;
+    background-color: #388E3C; /* Verde mais escuro no hover */
 }
